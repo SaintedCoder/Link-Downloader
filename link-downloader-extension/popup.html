@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Link Downloader</title>
+  <style>
+    body { width: 250px; padding: 10px; font-family: Arial, sans-serif; }
+    button { width: 100%; padding: 8px; margin: 5px 0; color: white; border: none; cursor: pointer; }
+    #downloadLinks { background-color: #4CAF50; }
+    #downloadLinks:hover { background-color: #45a049; }
+    #stopDownloads { background-color: #f44336; display: none; }
+    #stopDownloads:hover { background-color: #da190b; }
+    #progressBar { width: 100%; height: 20px; margin-top: 5px; }
+    #progressPercentage { font-size: 14px; text-align: center; margin-top: 10px; }
+    #status { font-size: 12px; margin-top: 5px; text-align: center; }
+  </style>
+</head>
+<body>
+  <button id="downloadLinks">Download PDF Links</button>
+  <button id="stopDownloads">Stop Downloads</button>
+  <div id="progressPercentage">0%</div>
+  <progress id="progressBar" value="0" max="100"></progress>
+  <div id="status">Ready</div>
+  <div style="text-align:center;"><p>>>Set download folder in browser settings<<</p></div>
+  <script src="popup.js"></script>
+</body>
+</html>
